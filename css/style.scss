@@ -90,7 +90,7 @@ header {
   background-image: url("../images/img_pic.jpg");
   height: 500px;
   width: 100%;
-  margin: 60px 0px;
+  margin: 0px 0px 50px;
   background-size: cover;
   background-position: center center;
 }
@@ -117,9 +117,16 @@ section {
     text-align: center;
     @extend .uppercase;
   }
+    .box p{
+    padding:25px;
+    }
+    .container h2{
+    width:100%;
+    color: $keyColor;
+    background-color: #F0E9E3;
+    }
   .text {
     @extend .abel;
-    text-align: center;
     @extend .block-center;
   }
 }
@@ -134,7 +141,6 @@ section {
   .box {
     @include flex(1);
     margin: 10px 25px;
-    padding: 20px;
     background-color: $subColor;
     @include border-radius(4px);
     @include box-sizing(border-box);
